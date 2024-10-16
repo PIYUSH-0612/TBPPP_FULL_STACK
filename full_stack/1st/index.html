@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me Page</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    /* Header Section */
+    .container {
+        background-image: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .child1 {
+        display: flex;
+        justify-content: left;
+        padding: 20px;
+    }
+
+    .x {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .x a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s;
+    }
+
+    .x a:hover {
+        color: #ddd;
+    }
+
+    .child2 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text h1 {
+        font-size: 50px;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    
+    .container2 {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 40px;
+        
+        
+        
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 300;
+        color: #444;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    h2 {
+        font-style: italic;
+        font-weight: 200;
+        color: #777;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    p {
+        line-height: 1.8;
+        color: #555;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .about-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .about-image img {
+        width: 300px;
+        height: auto;
+        
+        object-fit: cover;
+        
+    }
+
+    .about-info {
+        flex: 1;
+    }
+
+    .about-info h1 {
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #444;
+    }
+
+    .about-info h1 i {
+        font-size: 24px;
+        color: #777;
+    }
+
+    .about-info p {
+        line-height: 1.6;
+        color: #555;
+        margin-top: 10px;
+    }
+
+    
+    @media (max-width: 768px) {
+        .about-section {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 300px;
+            color: #777;
+        }
+    }
+    .about-image img :hover{
+        color: none;
+    }
+    .skills-section {
+    margin-top: 40px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #555;
+}
+
+.progress-bar {
+    background-color: #f4f4f4;
+    
+    height: 30px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+    background-color: #555;
+    height: 100%;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-bar .progress {
+    background-color: #444;
+}
+.skills-section p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+</style>
+<body>
+    
+    <div class="container">
+        <div class="child1">
+            <div class="x">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">EVENTS</a>
+                <a href="#">CONTACT</a>
+            </div>
+        </div>
+        <div class="child2">
+            <div class="text">
+                <h1>My Website Logo</h1>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container2">
+        <h1>ABOUT ME</h1>
+        <h2>I love photography</h2>
+        <p>
+            We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+            qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        
+        <div class="about-section">
+            <div class="about-image">
+                <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="About Me">
+            </div>
+            <div class="about-info">
+                <h1><i class="fas fa-user"></i> My Name</h1>
+                <p>
+                    Welcome to my website! I am lorem ipsum, a passionate individual with an eye for photography 
+                    and creativity. I enjoy capturing the beauty of life through my lens and exploring new ways to 
+                    express myself. Through my journey, I have come to appreciate the little things that make life 
+                    extraordinary. Feel free to browse my site and get to know me better.
+                </p>
+            </div>
+        </div>
+        <div class="skills-section">
+            <h2>I'm really good at:</h2>
+            <div class="skill">
+                <span> Photography</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"><p>90%</p></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span> Web Design</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"><p>85%</p></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span> Photoshop</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"><p>75%</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    
+    
+</body>
+</html>
